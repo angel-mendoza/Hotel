@@ -1,14 +1,18 @@
-body, body {
+html, body {
   height: 100%;
   max-width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: 'PT Sans', sans-serif; }
 
 header {
   position: fixed;
   width: 100%;
   text-align: center;
-  top: -10em; }
+  top: -10em;
+  transition: all 0.4s; }
+  header:hover {
+    top: -8em; }
   header:before {
     content: "";
     position: absolute;
@@ -30,12 +34,13 @@ header {
     -webkit-transform: skew(0deg, -10deg);
     right: 0; }
   header nav ul {
-    margin: 0;
-    /*top: -6em;*/ }
+    margin: 0; }
     header nav ul li {
-      display: inline-block; }
+      display: inline-block;
+      padding: 0 10px; }
       header nav ul li a {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #fff; }
   header #logo {
     background-color: #3DB5FF;
     position: relative;
