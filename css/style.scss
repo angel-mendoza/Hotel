@@ -1,0 +1,58 @@
+@mixin efectoEncabezado($grado, $color : 'red'){
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 150px;
+	width: 50%;
+	background: unquote($color);	
+	-webkit-transform: skew(0deg , unquote($grado + 'deg'));
+
+}
+body, body{
+	height: 100%;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: -10em;
+	&:before{
+		@include efectoEncabezado(10,'#3DB5FF');
+		left: 0;
+	}
+	&:after{
+		@include efectoEncabezado(-10,'#3DB5FF');
+		right: 0;
+	}
+	nav ul{
+		margin: 0;
+		/*top: -6em;*/
+		li{
+			display: inline-block;
+			a{
+				text-decoration: none;
+			}
+		}
+	}
+	#logo{
+		background-color: #3DB5FF;
+		position: relative;
+		width: 15%;
+		text-align: center;
+		min-width: 100px;
+		max-width: 100%;
+		left: 43%;
+		height: 100%;
+		top:185px;
+		z-index: 5;
+		border-radius: 0em 9em;
+		img{
+			width: 100px;
+		}
+	}
+}
