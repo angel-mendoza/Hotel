@@ -3,13 +3,17 @@ html, body {
   max-width: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'PT Sans', sans-serif; }
+  font-family: 'Courgette', cursive; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kaushan Script', cursive; }
 
 header {
   position: fixed;
   width: 100%;
   text-align: center;
   top: -10em;
+  z-index: 2;
   transition: all 0.4s; }
   header:hover {
     top: -8em; }
@@ -55,5 +59,26 @@ header {
     border-radius: 0em 9em; }
     header #logo img {
       width: 100px; }
+
+.fullScreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.slides div img {
+  width: 100%;
+  z-index: -55555; }
+.slides div h1 {
+  position: absolute;
+  margin-top: 350px;
+  z-index: 555;
+  color: white; }
+
+.slidesjs-navigation {
+  visibility: hidden; }
+
+.slidesjs-pagination {
+  visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */
