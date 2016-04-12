@@ -24,18 +24,18 @@ header{
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	top: -10em;
+	top: -14em;
 	z-index: 2;
 	transition: all 0.4s;
 	&:hover{
 		top:-8em;
 	}
 	&:before{
-		@include efectoEncabezado(10,'#3DB5FF');
+		@include efectoEncabezado(10,'rgba(255, 0, 0, 0.3)');
 		left: 0;
 	}
 	&:after{
-		@include efectoEncabezado(-10,'#3DB5FF');
+		@include efectoEncabezado(-10,' rgba(255, 0, 0, 0.3)');
 		right: 0;
 	}
 	nav ul{
@@ -50,7 +50,7 @@ header{
 		}
 	}
 	#logo{
-		background-color: #3DB5FF;
+		background-color: rgba(255, 0, 0, 0.9);
 		position: relative;
 		width: 15%;
 		text-align: center;

@@ -12,7 +12,7 @@ header {
   position: fixed;
   width: 100%;
   text-align: center;
-  top: -10em;
+  top: -14em;
   z-index: 2;
   transition: all 0.4s; }
   header:hover {
@@ -24,7 +24,7 @@ header {
     top: 0;
     height: 150px;
     width: 50%;
-    background: #3DB5FF;
+    background: rgba(255, 0, 0, 0.3);
     -webkit-transform: skew(0deg, 10deg);
     left: 0; }
   header:after {
@@ -34,7 +34,7 @@ header {
     top: 0;
     height: 150px;
     width: 50%;
-    background: #3DB5FF;
+    background:  rgba(255, 0, 0, 0.3);
     -webkit-transform: skew(0deg, -10deg);
     right: 0; }
   header nav ul {
@@ -46,7 +46,7 @@ header {
         text-decoration: none;
         color: #fff; }
   header #logo {
-    background-color: #3DB5FF;
+    background-color: rgba(255, 0, 0, 0.9);
     position: relative;
     width: 15%;
     text-align: center;
