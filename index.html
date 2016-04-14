@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>Fullscreen Background Image Slideshow with CSS3</title>
+        <title>Hotel Cometa</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
         <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
@@ -24,22 +24,30 @@
        <!--  <link rel="stylesheet" href="css/materialize.min.css"> -->
 
     </head>
-            <header>
+
+    <body id="page">
+    <header>
         <div id="logo"><h1><img src="images/logo.png" alt="logo del hotel"></h1></div>
         <div id="navegacion">
             <nav>
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Hotel</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#Habitaciones">Habitaciones</a></li>
                     <li><a href="">Promociones</a></li>
                     <li><a href="">Noticias</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-        </header>
-    <body id="page">
-        <ul class="cb-slideshow">
+    </header>
+    <section id="inicio" class"fullScreen">
+    <div class="cb-slideshow">
+        <div class="saludo">
+            <h1>Hotel Cometa</h1>
+            <h2>Elegance and Distinction since 1986</h2>
+            <p>come and enjoy our services, from the hand of our staff to take care that your experience is not less than magnificent</p>
+        </div>
+         <ul class="cb-slideshow">
             <li><span>Image 01</span><div><h3>se·ren·i·ty</h3></div></li>
             <li><span>Image 02</span><div><h3>com·po·sure</h3></div></li>
             <li><span>Image 03</span><div><h3>e·qua·nim·i·ty</h3></div></li>
@@ -47,6 +55,27 @@
             <li><span>Image 05</span><div><h3>qui·e·tude</h3></div></li>
             <li><span>Image 06</span><div><h3>re·lax·a·tion</h3></div></li>
         </ul>
+    </div>
+    </section>
+    <div class="fullScreen"></div>
+    <section id="Habitaciones" class="fullScreen">
+    <div class="contenedor">
+<!--         <img src="images/7.jpg"> -->
+        <div class="cuartos">
+            <h1>matrimonial</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium porro similique aperiam exercitationem illum itaque quo, sunt eum, quis aspernatur, perspiciatis, ut. Sapiente omnis consequatur excepturi, iusto blanditiis qui?</p>
+        </div>
+        <div class="cuartos">
+            <h1>familiar</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium porro similique aperiam exercitationem illum itaque quo, sunt eum, quis aspernatur, perspiciatis, ut. Sapiente omnis consequatur excepturi, iusto blanditiis qui?</p>
+        </div>
+        <div class="cuartos">
+            <h1>suite</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium porro similique aperiam exercitationem illum itaque quo, sunt eum, quis aspernatur, perspiciatis, ut. Sapiente omnis consequatur excepturi, iusto blanditiis qui?</p>
+        </div>
+    </div>
+
+    </section>
 
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/plugins.js"></script>
